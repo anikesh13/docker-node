@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "docker express app",
   "main": "index.js",
-  "repository": "https://github.com/anikesh13/",
+  "repository": "https://github.com/anikesh13/docker-node",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
