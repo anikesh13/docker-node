@@ -1,5 +1,5 @@
-const userSchema = require("../models/userSchema").userObejct;
-const userAddSubscribe = require("../models/userSchema").userSubscribe;
+const userSchema = require("../../models/userSchema").userObejct;
+const userAddSubscribe = require("../../models/userSchema").userSubscribe;
 
 function userSubscribed(userID, res) {
     const isVisit = new userAddSubscribe({
