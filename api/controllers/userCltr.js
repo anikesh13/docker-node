@@ -32,5 +32,15 @@ module.exports = {
             .catch(err => {
                 res.status(400).send(err);
             });
+    },
+
+    displayUser: function (req, res) {
+        userSchema.find()
+            .then(data => {
+                res.send(data);
+            })
+            .catch(err => {
+                res.send(err);
+            })
     }
 }

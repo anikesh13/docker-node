@@ -17,6 +17,7 @@ app.get('/', function (req, res) {
     res.send(`Hi There first api 111 ${process.env.DB_HOST}`);
 });
 
+// for rest-api
 app.use(routes);
 
 app.listen(port, function () {
