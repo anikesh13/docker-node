@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 const port = process.env.APP_PORT || process.env.PORT;
 const bodyParser = require('body-parser');
-const routes = require('./api/routes');
+const routes = require('./api/restApiRoutes');
 
 // for database
 require('./config');
