@@ -1,8 +1,28 @@
 const bookSchema = require("../../models/bookSchema");
 
 module.exports = {
-    displayBook: function (req, res) {
+    allBooks: function (req, res) {
         bookSchema.find()
+            .then(result => {
+                res.status(200).json({
+                    message: 'Book List',
+                    success: true,
+                    status: 200,
+                    data: result
+                });
+            })
+            .catch(err => {
+                res.status(404).json({
+                    message: 'Book error',
+                    success: false,
+                    status: 404,
+                    data: err
+                });
+            })
+    },
+
+    oneBook: function (req, res) {
+        bookSchema.T({ _id: req.params.id })
             .then(result => {
                 res.status(200).json({
                     message: 'Book List',
@@ -64,6 +84,8 @@ module.exports = {
     },
 
     editBook: function (req, res) {
+        console.log({ ...req.body });
+
         bookSchema.updateOne({ _id: req.body._id },
             {
                 ...req.body
