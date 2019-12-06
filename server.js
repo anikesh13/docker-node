@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
-    res.send(`Hi There first api 111 ${process.env.DB_HOST}`);
+    res.send(`Hi There, first dummy API is Here`);
 });
 
 // for rest-api
