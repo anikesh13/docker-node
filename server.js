@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 // const graphqlRoutes = require('./graphql-api');
 
 // for database
-require('./config');
+// require('./config');
 
 // Define middleware here
 app.use(bodyParser.urlencoded({ extended: true }));
