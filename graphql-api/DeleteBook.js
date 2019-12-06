@@ -1,7 +1,7 @@
 var GraphQLNonNull = require('graphql').GraphQLNonNull;
 var GraphQLString = require('graphql').GraphQLString;
 var bookType = require('./bookType');
-var bookModel = require('../models/Book');
+var bookModel = require('../models/bookSchema');
 exports.remove = {
   type: bookType.bookType,
   args: {

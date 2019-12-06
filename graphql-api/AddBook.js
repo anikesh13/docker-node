@@ -1,7 +1,7 @@
 var GraphQLNonNull = require('graphql').GraphQLNonNull;
 var GraphQLString = require('graphql').GraphQLString;
 var bookType = require('./bookType');
-var bookModel = require('../models/Book');
+var bookModel = require('../models/bookSchema');
 exports.addBook = {
   type: bookType.bookType,
 /* define the arguments that we should pass to the mutation

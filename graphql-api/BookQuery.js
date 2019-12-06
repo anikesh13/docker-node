@@ -1,7 +1,7 @@
 var GraphQLObjectType = require('graphql').GraphQLObjectType;
 var GraphQLList = require('graphql').GraphQLList;
 //import book model 
-var BookModel = require('../models/Book');
+var BookModel = require('../models/bookSchema');
 //import GraphQL BookType
 var bookType = require('./bookType').bookType;
 // Query

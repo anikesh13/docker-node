@@ -8,9 +8,9 @@ var BookSchema = new Schema({
     },
     author: {
         type: String,
-        required: true
+        required: false
     }
 });
 
-var Model = mongoose.model('book', BookSchema);
+var Model = mongoose.model('bookInfo', BookSchema);
 module.exports = Model;
