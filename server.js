@@ -4,8 +4,8 @@ const express = require('express');
 const app = express();
 const port = process.env.APP_PORT || process.env.PORT;
 const bodyParser = require('body-parser');
-const restApiRoutes = require('./rest-api');
-const graphqlRoutes = require('./graphql-api');
+// const restApiRoutes = require('./rest-api');
+// const graphqlRoutes = require('./graphql-api');
 
 // for database
 require('./config');
@@ -19,10 +19,14 @@ app.get('/', function (req, res) {
 });
 
 // for rest-api
-app.use(restApiRoutes);
+// app.use(restApiRoutes);
 
 // use for Graphql-api
-app.use(graphqlRoutes);
+// app.use(graphqlRoutes);
+
+app.get('**', function (req, res) {
+    res.send('Sorry, this is an invalid URL...');
+});
 
 app.listen(port, function () {
     console.log(`Listening on port ${port} !`);
