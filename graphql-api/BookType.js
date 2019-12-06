@@ -4,7 +4,7 @@ var GraphQLID = require('graphql').GraphQLID;
 var GraphQLString = require('graphql').GraphQLString;
 
 exports.bookType = new GraphQLObjectType({
-    name: 'book',
+    name: 'bookInfo',
     fields: () => {
         return {
             id: {
