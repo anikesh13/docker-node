@@ -2,11 +2,11 @@
   "name": "docker-node",
   "version": "1.0.1",
   "description": "docker express app",
-  "main": "index.js",
+  "main": "server.js",
   "repository": "https://github.com/anikesh13/docker-node",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node server.js"
 
   },
   "keywords": [],
