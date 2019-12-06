@@ -22,7 +22,7 @@ module.exports = {
     },
 
     oneBook: function (req, res) {
-        bookSchema.T({ _id: req.params.id })
+        bookSchema.findOne({ _id: req.params.id })
             .then(result => {
                 res.status(200).json({
                     message: 'Book List',
